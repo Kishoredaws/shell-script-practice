@@ -1,8 +1,8 @@
 #!/bin/bash
-# PERSON1=Kishore
-# PERSON2=Supriya
+PERSON1=Kishore
+PERSON2=Supriya
 
-echo "Kishore: Hai Supriya, How are you?"
-echo "Supriya: Hai Kishore, I am good and what about you Kishore"
-echo "Kishore: Yeah! I am also good and what are you doing Supriya"
-echo "Supriya: Yes Kishore I am working as a Tecnical recruiter Kishore"
+echo "$PERSON1: Hai $PERSON2, How are you?"
+echo "$PERSON2: Hai $PERSON1, I am good and what about you $PERSON1"
+echo "$PERSON1: Yeah! I am also good and what are you doing $PERSON2"
+echo "$PERSON2: Yes $PERSON1 I am working as a Tecnical recruiter $PERSON1"

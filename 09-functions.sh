@@ -2,7 +2,7 @@
 
 DATE=$(date +%F)
 SCRIPT_NAME=$0
-LOGFILE=temp/$SCRIPT_NAME-$DATE.log
+LOGFILE=tmp/$SCRIPT_NAME-$DATE.log
 
 
 VALIDATE(){

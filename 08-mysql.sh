@@ -27,3 +27,4 @@ echo "ERROR: installation of postfix is error"
 exit 1
 else
 echo "the installation of postfix is SUCCESS"
+fi 

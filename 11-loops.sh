@@ -42,8 +42,8 @@ then
 #     echo "INFO:: You are root user"
 fi
 
-VALIDATE $? "Installing MySQL"
-VALIDATE $? "Installing Postfix"
-VALIDATE $? "Installing git"
-VALIDATE $? "Installing mailx"
-VALIDATE $? "Installing ansible"
+# VALIDATE $? "Installing MySQL"
+# VALIDATE $? "Installing Postfix"
+# VALIDATE $? "Installing git"
+# VALIDATE $? "Installing mailx"
+# VALIDATE $? "Installing ansible"

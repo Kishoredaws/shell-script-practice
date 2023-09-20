@@ -8,7 +8,7 @@ G="\e[32m"
 N="\e[0m"
 Y="\e[33m"
 
-packages=("mysql" "postfix" "mailx" "git" "ansible" "jenkins")
+packages=("mysql" "postfix" "mailx" "git" "ansible")
 
 # Iterate through the package list
 for package in "${packages[@]}"; do
@@ -42,9 +42,9 @@ then
 #     echo "INFO:: You are root user"
 fi
 
-# VALIDATE $? "Installing MySQL"
-# VALIDATE $? "Installing Postfix"
-# VALIDATE $? "Installing git"
-# VALIDATE $? "Installing mailx"
-# VALIDATE $? "Installing ansible"
- VALIDATE $? "Installing jenkins"
+VALIDATE $? "Installing MySQL"
+VALIDATE $? "Installing Postfix"
+VALIDATE $? "Installing git"
+VALIDATE $? "Installing mailx"
+VALIDATE $? "Installing ansible"
+

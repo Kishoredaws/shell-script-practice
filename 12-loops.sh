@@ -5,7 +5,7 @@ N="\e[0m
 USERID=$(id -u)
 if [ $USERID -ne 0 ];
 then
-    echo -e "$R ERROR:: Please run this script with root access $N"
+    echo -e "$R ERROR: please run script with root access"
     exit 1
 fi
 

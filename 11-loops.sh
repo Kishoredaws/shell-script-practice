@@ -7,9 +7,17 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 
-for i in $@
-do
-    yum install $i -y &>>$LOGFILE
+packages=("mysql" "postfix" "mailx" "git")
+
+# Iterate through the package list
+for package in "${packages[@]}"; do
+    # Check if the package is installed
+    if ! rpm -q "$package" >/dev/null; then
+        # If it's not installed, install it
+        sudo yum install "$package" -y
+    else
+        echo "$package is already installed."
+    fi
 done
 
 VALIDATE(){
@@ -32,6 +40,7 @@ then
 # else
 #     echo "INFO:: You are root user"
 fi
+
 
 VALIDATE $? "Installing MySQL"
 VALIDATE $? "Installing Postfix"

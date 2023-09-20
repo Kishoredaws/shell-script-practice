@@ -8,7 +8,7 @@ G="\e[32m"
 N="\e[0m"
 Y="\e[33m"
 
-packages=("mysql" "postfix" "mailx" "git" "ansible")
+packages=("mysql" "postfix" "mailx" "git" "ansible" "jenkins")
 
 # Iterate through the package list
 for package in "${packages[@]}"; do

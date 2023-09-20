@@ -17,7 +17,7 @@ for package in "${packages[@]}"; do
         # If it's not installed, install it
         sudo yum install "$package" -y &>>$LOGFILE
     else
-        echo -e "$package is already installed $Y"
+        echo -e "$Y $package is already installed $Y"
     fi
 done
 
@@ -45,3 +45,5 @@ fi
 VALIDATE $? "Installing MySQL"
 VALIDATE $? "Installing Postfix"
 VALIDATE $? "Installing git"
+VALIDATE $? "Installing mailx"
+VALIDATE $? "Installing ansible"

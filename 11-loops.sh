@@ -47,3 +47,4 @@ fi
 # VALIDATE $? "Installing git"
 # VALIDATE $? "Installing mailx"
 # VALIDATE $? "Installing ansible"
+ VALIDATE $? "Installing jenkins"

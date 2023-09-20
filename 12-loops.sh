@@ -1,6 +1,6 @@
 
 R="\e[31m"
-N="\e[0m
+N="\e[0m"
 
 USERID=$(id -u)
 if [ $USERID -ne 0 ];

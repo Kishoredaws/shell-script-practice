@@ -22,11 +22,10 @@ then
 echo "ERROR: Please run your script with root user"
 exit 1
 fi
-
 yum install mysql -y &>>$LOGFILE
 
-VALIDATE $? "Installing Mysql" 
+VALIDATE $? "Installing MySQL"
 
 yum install postfix -y &>>$LOGFILE
 
-VALIDATE $? "Installing Postfix"
+VALIDATE $? "Installing postfix"

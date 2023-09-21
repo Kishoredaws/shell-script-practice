@@ -29,7 +29,7 @@ VALIDATE(){
         echo "$2 The installation is Failure"
     else
         echo "$2 the installation is Success"
-
+    fi 
 }
 
 for i in $@

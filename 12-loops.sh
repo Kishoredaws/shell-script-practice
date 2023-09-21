@@ -34,7 +34,7 @@ VALIDATE(){
 
 for i in $@
 do
-yum installed list $i >>&LOGFILE
+yum installed list $i >>$LOGFILE
 if [ $? -ne 0 ]
 then 
     echo "$i is not installed lets install it"

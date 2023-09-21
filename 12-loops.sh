@@ -42,6 +42,5 @@ then
     VALODATE $? "$i"
 else
     echo "$i is already installed"
-
-
+fi 
 done

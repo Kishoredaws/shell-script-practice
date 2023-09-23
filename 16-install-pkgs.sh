@@ -6,7 +6,7 @@ then
 exit 1
 fi
 
-VALIDATE() {
+VALIDATE(){
 
 if [ $1 -ne 0 ];
 then

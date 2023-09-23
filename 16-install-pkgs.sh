@@ -6,9 +6,9 @@ then
 exit 1
 fi
 
-VALIDATE(){
+VALIDATE() {
 
-if [ $1 -ne 0 ]
+if [ $1 -ne 0 ];
 then
     echo "Installing $2 FAILURE "
     exit 1

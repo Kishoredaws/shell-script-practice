@@ -25,7 +25,6 @@ then
     echo "The $i is not installed, so lets install it"
     yum install $i -y
     VALIDATE $? "$i"
-    exit 1
 else
     echo "The $i is already installed"
 fi
